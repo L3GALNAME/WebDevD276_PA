@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavier Santos - Résumé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <p>
+            <span>Web Developer | Full Stack Engineer</span><br>
+            Email: john.doe@example.com | Phone: (555) 123-4567 | Location: San Francisco, CA
+        </p>
+        <hr>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="resume.html">Résumé</a></li>
+            <li><a href="career-goals.html">Career Goals</a></li>
+            <li><a href="cover-letter.html">Cover Letter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Professional Summary</h2>
+            <p>
+                <em>Dedicated and creative web developer with a passion for building user-friendly digital experiences.</em>
+                Expertise in modern web technologies and <strong>full-stack development</strong>. Committed to continuous learning
+                and staying current with industry trends.
+            </p>
+            <hr>
+        </article>
+
+        <article>
+            <h2>Experience</h2>
+            <section>
+                <h3>Senior Web Developer</h3>
+                <p><strong>Tech Innovations Inc.</strong> | January 2022 – Present</p>
+                <ul>
+                    <li>Developed and maintained responsive web applications using HTML, CSS, and JavaScript</li>
+                    <li>Collaborated with designers and product teams to implement user-centered features</li>
+                    <li>Optimized website performance, achieving 40% faster load times</li>
+                    <li>Mentored junior developers on best practices and code standards</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Junior Web Developer</h3>
+                <p><strong>Creative Digital Agency</strong> | June 2020 – December 2021</p>
+                <ul>
+                    <li>Built responsive websites for diverse client portfolios</li>
+                    <li>Debugged and resolved cross-browser compatibility issues</li>
+                    <li>Participated in code reviews and team development meetings</li>
+                </ul>
+            </section>
+            <hr>
+        </article>
+
+        <article>
+            <h2>Education</h2>
+            <section>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p><strong>State University</strong> | Graduated: May 2020</p>
+                <p>Relevant Coursework: Web Development, Database Design, Software Engineering</p>
+            </section>
+            <hr>
+        </article>
+
+        <article>
+            <h2>Skills</h2>
+            <table>
+                <caption>Technical Skills and Proficiency Levels</caption>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Proficiency</th>
+                        <th>Years of Experience</th>
+                        <th>Certification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML & CSS</td>
+                        <td>Expert</td>
+                        <td>5+</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Advanced</td>
+                        <td>4</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>Intermediate</td>
+                        <td>2</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Backend Development</td>
+                        <td>Intermediate</td>
+                        <td>3</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </article>
+
+        <article>
+            <h2>Current Date</h2>
+            <div id="current-date">
+                <!-- Date will be populated by JavaScript -->
+            </div>
+            <hr>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 John Doe. All rights reserved.</p>
+        <p>Contact: john.doe@example.com</p>
+    </footer>
+
+    <script>
+        // Function to populate the current date
+        function populateCurrentDate() {
+            const dateElement = document.getElementById('current-date');
+            const today = new Date();
+            const formattedDate = today.toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            dateElement.textContent = 'Last updated: ' + formattedDate;
+        }
+
+        // Function to log a message to the console
+        function logWelcomeMessage() {
+            console.log('Welcome to the Professional Résumé of John Doe. This page was loaded on: ' + new Date().toLocaleString());
+        }
+
+        // Execute both functions on page load
+        populateCurrentDate();
+        logWelcomeMessage();
+    </script>
+</body>
+</html>
