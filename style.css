@@ -11,15 +11,15 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #e6f5f7;
 }
 
 header {
-    background-color: #2c3e50;
+    background-color: #191c73;
     color: #ecf0f1;
     padding: 2rem;
     margin-bottom: 1.5rem;
-    border-bottom: 4px solid #3498db;
+    border-bottom: 4px solid #e37493;
 }
 
 h1 {
@@ -32,8 +32,8 @@ h2 {
     font-size: 1.8rem;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #2c3e50;
-    border-left: 4px solid #3498db;
+    color: #191c73;
+    border-left: 4px solid #b2ebcb;
     padding-left: 0.75rem;
 }
 
@@ -41,11 +41,11 @@ h3 {
     font-size: 1.3rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    color: #34495e;
+    color: #191c73;
 }
 
 nav {
-    background-color: #34495e;
+    background-color: #191c73;
     padding: 1rem;
     margin-bottom: 2rem;
 }
@@ -71,7 +71,12 @@ nav a {
 }
 
 nav a:hover {
+    color: #ecf0f1;
     background-color: #3498db;
+}
+
+nav a:visited {
+    color: #ecf0f1;
 }
 
 main {
@@ -108,12 +113,12 @@ p {
 }
 
 footer {
-    background-color: #2c3e50;
+    background-color: #191c73;
     color: #ecf0f1;
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
-    border-top: 4px solid #3498db;
+    border-top: 4px solid #e37493;
 }
 
 hr {
@@ -148,7 +153,7 @@ header p {
 }
 
 article h3 {
-    color: #2c3e50;
+    color: #191c73;
     font-style: italic;
 }
 
@@ -162,7 +167,7 @@ img {
     height: auto;
     border-radius: 8px;
     margin: 1.5rem 0;
-    border: 2px solid #3498db;
+    border: 2px solid #e37493;
     padding: 0.5rem;
     background-color: #ecf0f1;
 }
@@ -170,7 +175,7 @@ img {
 audio {
     width: 100%;
     margin: 1rem 0;
-    border: 2px solid #3498db;
+    border: 2px solid #e37493;
     border-radius: 4px;
     padding: 0.5rem;
 }
@@ -180,7 +185,7 @@ video {
     height: auto;
     border-radius: 8px;
     margin: 1.5rem 0;
-    border: 2px solid #3498db;
+    border: 2px solid #e37493;
 }
 
 /* Form Elements */
@@ -292,13 +297,13 @@ table {
 caption {
     caption-side: top;
     font-weight: bold;
-    color: #2c3e50;
+    color: #191c73;
     margin-bottom: 1rem;
     font-size: 1.1rem;
 }
 
 thead {
-    background-color: #34495e;
+    background-color: #191c73;
     color: #ecf0f1;
 }
 
@@ -341,9 +346,9 @@ tbody tr:hover {
 
 /* ID Selector */
 #current-date {
-    background-color: #e8f4f8;
+    background-color: #fae8f6;
     padding: 1rem;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #e37493;
     border-radius: 4px;
     margin: 1rem 0;
     color: #2c3e50;
